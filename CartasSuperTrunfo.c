@@ -32,8 +32,12 @@ int main() {
   
       printf("Digite os pontos turísticos da cidade: \n");
       scanf("%d", &turistic_points);
+
+      densidade_populacional = population / area;
+
+      PIB_percapita = pib / population;
   
-      printf("\nCidade: %s\nCódigo: %s\nEstado: %s\nPopulação: %d\nÁrea: %.2f\nPIB: %.2f\nPontos Turísticos: %d\n\n",
+      printf("\nCidade: %s\nCódigo: %s\nEstado: %s\nPopulação: %d\nÁrea: %.2f\nPIB: %.2f\nPontos Turísticos: %d\n\n Desidade Populacional: %.2f \n PIB_percapita %.2f \n",
              city_name, code, state, population, area, pib, turistic_points);
     }
     return 0;
